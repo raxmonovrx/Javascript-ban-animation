@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  height: 100vh;
+  transition: 0.5s;
+  background-color: red;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 5px 10px #00000080;
+  background-color: transparent;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+
+  position: relative;
+  overflow: hidden;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn__text {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0px;
+
+  width: 400px;
+  height: 100%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__text > span {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.btn__text_itemA {
+  background-color: green;
+}
+
+.btn__text_itemB {
+  background-color: red;
+}
+
+.btnB {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 5px 10px #00000080;
+  background-color: transparent;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+
+  position: relative;
+  overflow: hidden;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btnB__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  width: 100%;
+  height: 100px;
+
+  transition: all 0.3s ease-in-out;
+}
+.btnB__text > span {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+}
+
+.btnB__text_itemA {
+  background-color: rgb(255, 153, 0);
+}
+.btnB__text_itemB {
+  background-color: rgb(0, 21, 255);
+}
